@@ -25,13 +25,15 @@ addEventListener("hashchange", () => openSection(location.hash));
 openSection(location.hash);
 
 // Highlight the section currently on screen in the sidebar: the last one whose top has
-// passed 30% of the window. A clicked link stays highlighted until the visitor scrolls,
-// because short sections at the bottom of the page can never reach that line.
+// passed 30% of the window. A clicked link stays highlighted until the visitor scrolls
+// again (short sections at the bottom of the page can never reach that line). The lock
+// ignores the scroll the click itself causes, for about a second.
 const navLinks = new Map([...document.querySelectorAll("aside nav a")].map(a => [a.hash.slice(1), a]));
 const sections = [...document.querySelectorAll("main section")];
-let locked = false;
+let locked = false, lockedAt = 0;
 const mark = id => { navLinks.forEach(a => a.classList.remove("on")); navLinks.get(id)?.classList.add("on"); };
 const spy = () => {
+  if (locked && performance.now() - lockedAt > 1200) locked = false;  // e.g. scrollbar drag
   if (locked || !sections.length) return;
   let id = sections[0].id;
   for (const s of sections) if (s.getBoundingClientRect().top <= innerHeight * 0.3) id = s.id;
@@ -39,9 +41,10 @@ const spy = () => {
 };
 addEventListener("scroll", () => requestAnimationFrame(spy), { passive: true });
 for (const t of ["wheel", "touchstart", "keydown"]) addEventListener(t, () => { locked = false; }, { passive: true });
-navLinks.forEach((a, id) => a.addEventListener("click", () => { mark(id); locked = true; }));
+const lock = id => { mark(id); locked = true; lockedAt = performance.now(); };
+navLinks.forEach((a, id) => a.addEventListener("click", () => lock(id)));
 // Arriving on a #link (or following one) highlights that section, like a click.
-const fromHash = () => { const id = location.hash.slice(1); if (navLinks.has(id)) { mark(id); locked = true; } };
+const fromHash = () => { const id = location.hash.slice(1); if (navLinks.has(id)) lock(id); };
 addEventListener("hashchange", fromHash);
 spy();
 fromHash();
