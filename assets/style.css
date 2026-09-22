@@ -86,6 +86,8 @@ summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .figs a { display: block; min-width: 0; }
 .figs img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--rule); background: #fff; }
 .badge { font-size: 12px; font-weight: 600; white-space: nowrap; background: var(--ink); color: var(--card); padding: 3px 9px; border-radius: 6px; }
+a.badge::after { content: " \2197"; }   /* the badge links to the paper */
+a.badge:hover { background: var(--accent); color: var(--card); text-decoration: none; }
 .note { font-size: 13px; color: var(--muted); }
 
 .row { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 14.5px; }
