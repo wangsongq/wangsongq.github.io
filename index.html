@@ -1,284 +1,349 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Songqi Wang</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Songqi Wang</title>
+<meta name="description" content="Songqi Wang, Postdoctoral Fellow at The University of Hong Kong. Memristor-based compute-in-memory chips, from device physics to analog AI systems.">
+<link rel="canonical" href="https://wangsongq.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Songqi Wang">
+<meta property="og:description" content="Songqi Wang, Postdoctoral Fellow at The University of Hong Kong. Memristor-based compute-in-memory chips, from device physics to analog AI systems.">
+<meta property="og:url" content="https://wangsongq.github.io/">
+<meta property="og:image" content="https://wangsongq.github.io/assets/photo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="assets/style.css?v=efe14131">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Songqi Wang", "jobTitle": "Postdoctoral Fellow", "url": "https://wangsongq.github.io/", "email": "mailto:sqwang@hku.hk", "image": "https://wangsongq.github.io/assets/photo.jpg", "affiliation": {"@type": "CollegeOrUniversity", "name": "The University of Hong Kong"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The University of Hong Kong"}, {"@type": "CollegeOrUniversity", "name": "University of California, Santa Barbara"}, {"@type": "CollegeOrUniversity", "name": "Nanyang Technological University"}, {"@type": "CollegeOrUniversity", "name": "Huazhong University of Science and Technology"}], "sameAs": ["https://scholar.google.com/citations?user=gerKleUAAAAJ&hl=en"], "knowsAbout": ["RRAM compute-in-memory", "Analog neural ODE solvers", "In-memory pruning", "Edge AI hardware"]}</script>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+<div class="wrap">
+  <aside>
+    <img class="photo" src="assets/photo.jpg" alt="Photo of Songqi Wang" width="168" height="168">
+    <h1>Songqi Wang</h1>
+    <div class="role">Postdoctoral Fellow<br>Department of Electrical and Computer Engineering<br><a href="https://www.hku.hk/">The University of Hong Kong</a></div>
+    <a class="email" href="mailto:sqwang@hku.hk">sqwang@hku.hk</a>
+    <nav aria-label="Sections"><a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#talks">Talks</a><a href="#education">Education</a><a href="#teaching">Teaching</a></nav>
+    <div class="chips"><a href="https://scholar.google.com/citations?user=gerKleUAAAAJ&amp;hl=en">Google Scholar</a></div>
+    <button class="theme" type="button" aria-label="Toggle dark mode">◐ <span>Dark mode</span></button>
+  </aside>
+
+  <main>
+    <section id="about">
+      <details class="fold" open>
+      <summary><h2>About</h2></summary>
+      <p class="lead">I am a Postdoctoral Fellow in the Department of Electrical and Computer Engineering at
+  <a href="https://www.hku.hk/">The University of Hong Kong</a>, working with Prof. Han Wang.
+  I received my Ph.D. from HKU in 2026, supervised by Prof. Han Wang and Prof. Zhongrui Wang,
+  and my bachelor's degree from Huazhong University of Science and Technology in 2022.</p><p class="lead">I build <b>compute-in-memory</b> chips with memristors such as RRAM and carry them all the way to
+  working systems: the chip, the test board and FPGA controller, and the algorithms that run on
+  them. My research follows three directions. The first turns the physical properties of the
+  device into computing resources and system elements. The second asks how
+  to deploy and train neural networks efficiently on memristor-based analog compute-in-memory, through
+  in-memory pruning, adaptive programming and fault-aware compensation. The third explores new
+  computing paradigms built on memristors, such as fully analog, continuous-time neural ODE solvers for
+  generative models.</p><p class="lead">I have authored 25 peer-reviewed papers (13 journal and 12 conference papers),
+  6 of them as first or co-first author, in <i>Nature Communications</i>, IEDM, DAC and ICCAD.
+  As a co-author I have also published in <i>Nature</i>, <i>Nature Machine Intelligence</i>,
+  <i>Nature Nanotechnology</i>, <i>Nature Computational Science</i>, <i>Science Advances</i>,
+  <i>Advanced Materials</i> and <i>IEEE Transactions on Computers</i>.</p>
+      </details>
+    </section>
+
+    <section id="news">
+      <details class="fold" open>
+      <summary><h2>News</h2></summary>
+      <div class="news-box" tabindex="0" role="region" aria-label="News, scrollable"><div class="news"><div><span class="d">Aug 2026</span>Passed my Ph.D. defense at HKU and stayed on in Prof. Han Wang's group as a Postdoctoral Fellow.</div><div><span class="d">Aug 2026</span>Two papers accepted to <b>IEDM 2026</b>: an all-PWM RRAM CIM with in-loop state memory (co-first author), and reliability enhancement for high-precision RRAM CIM (co-author).</div><div><span class="d">Jul 2026</span>Presented continuous-time analog neural ODE solver for flow-matching fluid generation (first author) at <b>DAC 2026</b>, Long Beach.</div><div><span class="d">Jan 2026</span>“Pruning random resistive memory for optimizing analog AI” (co-first author) published in <b>Nature Communications</b>.</div><div><span class="d">Dec 2025</span>Presented a monolithic reconfigurable RRAM compute-in-memory chip for edge AI (first author) at <b>IEDM 2025</b>, San Francisco.</div><div><span class="d">Nov 2025</span>Gave a seminar at HKU on edge pruning and kernel pruning across analog and digital RRAM CIM.</div><div><span class="d">Jun 2025</span>Presented a reliable, reconfigurable 3T2R RRAM chip (co-author) at <b>DAC 2025</b>, San Francisco.</div><div><span class="d">Oct 2024</span>Two co-first-author papers at <b>ICCAD 2024</b>, Newark: LSMR, which pairs the randomness of liquid state machines with an RRAM analog-digital accelerator, and SNNGX, on spiking neural networks running on RRAM neuromorphic accelerators.</div></div></div>
+      </details>
+    </section>
+
+    <section id="publications">
+      <details class="fold" open>
+      <summary><h2>Publications</h2></summary>
+      <div class="filters" role="group" aria-label="Filter publications" hidden>
+        <button type="button" data-f="first" aria-pressed="true">First / co-first (7)</button>
+        <button type="button" data-f="journal" aria-pressed="false">Journals (14)</button>
+        <button type="button" data-f="conference" aria-pressed="false">Conferences (12)</button>
+        <button type="button" data-f="all" aria-pressed="false">All (27)</button>
+      </div>
+      <div class="publist">
+      <article class="card" data-kind="conference" data-first="1">
+        <div>
+          <h3>A Fully Analog Continuous-Time CIM Neural ODE Solver for Flow-Matching-Based Fluid Dynamics Generation</h3>
+          <div class="authors"><b>S. Wang†</b>, M. Xu†, J. Yang†, Z. Chen, H. Chen, S. Liu, X. Zhang, K. Wong, N. Lin, Y. Li, Z. Wang, H. Wang</div>
+          <div class="venue"><i>ACM/IEEE Design Automation Conference (DAC)</i></div>
+          
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Songqi Wang</h1>
-            <h2>P.h.D student</h2>  
-	    <h2>Electrical&Electronic Engineering</h2> 
-	    <h2>The University of Hong Kong</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+        <span class="badge">DAC 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="1">
+        <div>
+          <h3>Pruning random resistive memory for optimizing analog AI</h3>
+          <div class="authors">Y. Li†, <b>S. Wang†</b>, Y. Zhao, S. Wang, B. Wang, W. Zhang, Y. He, N. Lin, B. Cui, X. Chen, S. Zhang, H. Jiang, P. Lin, X. Zhang, F. Zhang, X. Qi, Z. Wang*, X. Xu*, D. Shang*, Q. Liu, H. Wang, K.-T. Cheng, M. Liu</div>
+          <div class="venue"><i>Nature Communications</i>, vol. 17, 1190</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s41467-025-67960-6">DOI</a></div>
         </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
+        <span class="badge">Nat. Commun. 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="1">
+        <div>
+          <h3>Reconfigurable Digital RRAM Logic Enables In-situ Pruning and Learning for Edge AI</h3>
+          <div class="authors"><b>S. Wang†</b>, Y. Zhang†, J. Chen, X. Zhang, Y. Li, N. Lin, Y. He, J. Yang, Y. Yu, Y. Li, Z. Wang*, X. Qi*, H. Wang*</div>
+          <div class="venue"><i>Science Advances</i>, arXiv:2506.13151 (In revision)</div>
+          <div class="plinks"><a href="https://arxiv.org/abs/2506.13151">arXiv</a></div>
         </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p>
-                </div>
-            </div>
+        <span class="badge">arXiv 2025</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="1">
+        <div>
+          <h3>All-PWM RRAM Compute-in-Memory with In-Loop State Memory for Energy-Efficient Closed-Loop State Evolution</h3>
+          <div class="authors">J. Yang†, X. Zhang†, <b>S. Wang†</b>, H. Chen, Z. Li, S. Liang, H.-M. Zhang, N. Lin, Y. Li, Z. Wang*, H. Wang*</div>
+          <div class="venue"><i>IEEE International Electron Devices Meeting (IEDM)</i></div>
+          
         </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
+        <span class="badge">IEDM 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Two-dimensional materials for advanced back-end-of-line and wafer backside technologies</h3>
+          <div class="authors">Z. Wang, J. Wang, Y. Cao, H.-M. Zhang, Y. Zeng, S. Liu, <b>S. Wang</b>, H. Gong, Y. Zhang*, P. Wu*, L. Peng, H. Wang*</div>
+          <div class="venue"><i>Nature Nanotechnology</i></div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s41565-026-02274-2">DOI</a></div>
         </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Huazhong University of Science and Technology</h3>
-            <span class="education-date">Sept 2018 - June 2021</span>
-            <h4>Bachelor of Engineering in Electronic Information Engineering</h4>
-            <p>
-                
-            </p>
+        <span class="badge">Nat. Nanotechnol. 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Efficient and accurate neural-field reconstruction using resistive memory</h3>
+          <div class="authors">Y. Yu, X. Zhang, S. Wang, W. Zhang, X. Wu, Y. He, J. Yang, Y. Zhang, N. Lin, B. Wang, X. Chen, <b>S. Wang</b>, X. Wu, S. Han, Y. Li, M. Xu, H. Chen, W. Zhang, J. Chen, X. Zhang, X. Qi*, D. Shang*, Q. Liu*, Z. Wang*, K.-T. Cheng, M. Liu</div>
+          <div class="venue"><i>Nature</i>, vol. 654, pp. 642–651</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s41586-026-10646-w">DOI</a></div>
         </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of California, Santa Barbara (exchange)</h3>
-            <span class="education-date">Sept 2021 - June 2022</span>
-            <h4>Major in Electrical & Computer Engineering</h4>
-            <ul>
-
-            </ul>
+        <span class="badge">Nature 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Resistive memory-based neural differential equation solver for score-based diffusion model</h3>
+          <div class="authors">J. Yang†, H. Chen†, J. Chen†*, <b>S. Wang</b>, Q. Zhu, X. Zhang, Y. Zeng, S. Wang, M. Yang, Y. Yu, X. Chen, B. Wang, B. Cui, Y. Li, N. Lin, M. Xu, Y. Li, X. Xu, X. Qi*, X. Zhang, D. Shang*, Z. Wang*, H. Wang, Q. Liu, K.-T. Cheng, M. Liu</div>
+          <div class="venue"><i>Nature Communications</i>, vol. 17, 6354</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s41467-026-72900-z">DOI</a></div>
         </div>
-        <!-- End .education-block -->
-	    
-        <div class="education-block">
-            <h3>University of Hong Kong</h3>
-            <span class="education-date">Sept 2021 - June 2022</span>
-            <h4>P.h.D in Electrical&Electronic Engineering (ongoing)</h4>
-            <ul>
-
-            </ul>
+        <span class="badge">Nat. Commun. 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Adaptive Redox Resistive Memory Programming for Efficient and Robust Class-Incremental Learning</h3>
+          <div class="authors">Y. Li, J. Yang, Q. Hou, <b>S. Wang</b>, S. Liu, H. Zhang, Z. Ye, J. Jiang, N. Lin, X. Xu, D. Shang, X. Qi, Z. Wang, H. Wang</div>
+          <div class="venue"><i>Advanced Materials</i>, vol. 38, no. 48, e00025</div>
+          <div class="plinks"><a href="https://doi.org/10.1002/adma.202600025">DOI</a></div>
         </div>
-        <!-- End .education-block -->
-	    
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
+        <span class="badge">Adv. Mater. 2026</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>Comprehensive Reliability Enhancement for High-Precision RRAM Compute-in-Memory via Fault-Aware Hadamard Transform and Low-Rank Compensation</h3>
+          <div class="authors">J. Yang, X. Zhang, J. Chen, M. Xu, H. Chen, Y. Zeng, J. Jiang, <b>S. Wang</b>, Y. Li, Z. Wang, Y. Li, H. Wang</div>
+          <div class="venue"><i>IEEE International Electron Devices Meeting (IEDM)</i></div>
+          
         </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <span class="badge">IEDM 2026</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>RRAM-DP: Device-Calibrated In-Memory Edge Learning</h3>
+          <div class="authors">K. Wong, J. Yang, K. M. H. Lai, H. Chen, <b>S. Wang</b>, W. Xuan, N. Lin, H. Wang, X. Qi, Z. Wang</div>
+          <div class="venue"><i>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</i></div>
+          <div class="plinks"><a href="https://arxiv.org/abs/2607.18169">arXiv</a></div>
         </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2022</span> YOUR NAME
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <span class="badge">ICCAD 2026</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>HFSCIM: Hybrid FeFET-SRAM CIM Architecture for Continuous-Time Inference and Online Reinforcement Learning</h3>
+          <div class="authors">H. Chen, Z. Xuan, Y. Li, N. Lin, J. Chen, Y. Zeng, J. Yang, <b>S. Wang</b>, H. Wang, Z. Wang</div>
+          <div class="venue"><i>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</i></div>
+          
         </div>
-    </footer>
-    <!-- End footer -->
+        <span class="badge">ICCAD 2026</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>Reconfigurable 3D-VRRAM LUT-CiM with Greedy G-shuffle Quantization for End-to-End 4-bit ViTs in Edge Dense Prediction</h3>
+          <div class="authors">Y. Li†, Z. Ye†, Z. Cong†, S. Yan, <b>S. Wang</b>, N. Lin, J. Yue*, X. Qi*, Z. Wang*, H. Wang*</div>
+          <div class="venue"><i>ACM/IEEE Design Automation Conference (DAC)</i></div>
+          
+        </div>
+        <span class="badge">DAC 2026</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>AgeBalance: Low-Cost Lifetime Extension for SRAM-based PIM Accelerators</h3>
+          <div class="authors">N. Lin, S. Wang, Y. Zhao, Y. He, <b>S. Wang</b>, K. Wong, R. Fu, W. Li, T.-Y. Ho, D. Shang, X. Qi, X. Chen, Z. Wang</div>
+          <div class="venue"><i>IEEE Transactions on Computers</i>, vol. 75, no. 8, pp. 2870–2884</div>
+          <div class="plinks"><a href="https://doi.org/10.1109/tc.2026.3695104">DOI</a></div>
+        </div>
+        <span class="badge">IEEE TC 2026</span>
+      </article>
+      <article class="card" data-kind="preprint" data-first="0">
+        <div>
+          <h3>Parameter Efficient Machine Unlearning on Hybrid Resistive Memory based Compute-in-Memory Accelerators</h3>
+          <div class="authors">N. Lin, J. Yang, Y. He, Z. Ye, K. Wong, X. Zhang, <b>S. Wang</b>, Z. Li, Y. Chen, J. Zha, W. Li, Y. Li, K. Xu, L. Y. Zhang, X. Chen, D. Shang, C. Tan, H. Wang, X. Qi, Z. Wang</div>
+          <div class="venue">arXiv:2601.10037</div>
+          <div class="plinks"><a href="https://arxiv.org/abs/2601.10037">arXiv</a></div>
+        </div>
+        <span class="badge">arXiv 2026</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="1">
+        <div>
+          <h3>A Monolithic Reconfigurable RRAM CIM Chip for Edge AI</h3>
+          <div class="authors"><b>S. Wang†</b>, S. Liang†, S. Wu†, Z. Yang, J. Yang, X. Zhang, Y. Li, Y. Zhang*, Z. Wang*, A. Zhang*, H. Wang*</div>
+          <div class="venue"><i>IEEE International Electron Devices Meeting (IEDM)</i>, pp. 1–4</div>
+          <div class="plinks"><a href="https://doi.org/10.1109/iedm50572.2025.11353751">DOI</a></div>
+        </div>
+        <span class="badge">IEDM 2025</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Brain-Inspired In-Memory Data Pruning and Computing with TaOx Mem-Selectors</h3>
+          <div class="authors">Y. Li, J. Lai, <b>S. Wang</b>, N. Lin, X. Zheng, W. Sun, D. Dong, X. Xu, H. Ma, F. Zhang, X. Qi, Z. Wang*, X. Xu*, D. Shang*, H. Wang, M. Liu</div>
+          <div class="venue"><i>Advanced Materials</i>, vol. 37, no. 43, e02168</div>
+          <div class="plinks"><a href="https://doi.org/10.1002/adma.202502168">DOI</a></div>
+        </div>
+        <span class="badge">Adv. Mater. 2025</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Resistive memory-based zero-shot liquid state machine for multimodal event data learning</h3>
+          <div class="authors">N. Lin†, S. Wang†, Y. Li, B. Wang, S. Shi, Y. He, W. Zhang, Y. Yu, Y. Zhang, X. Zhang, K. Wong, <b>S. Wang</b>, X. Chen, H. Jiang, X. Zhang, P. Lin, X. Xu, X. Qi, Z. Wang*, D. Shang*, Q. Liu, M. Liu</div>
+          <div class="venue"><i>Nature Computational Science</i>, vol. 5, pp. 37–47</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s43588-024-00751-z">DOI</a></div>
+        </div>
+        <span class="badge">Nat. Comput. Sci. 2025</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Topology Optimization of Random Memristors for Input-Aware Dynamic SNN</h3>
+          <div class="authors">B. Wang, X. Zhang, S. Wang, N. Lin, Y. Li, Y. Yu, Y. Zhang, J. Yang, X. Wu, Y. He, <b>S. Wang</b>, T. Wan, R. Chen, G. Li, Y. Deng, X. Qi*, Z. Wang*, D. Shang*</div>
+          <div class="venue"><i>Science Advances</i>, vol. 11, no. 16, p. eads5340</div>
+          <div class="plinks"><a href="https://doi.org/10.1126/sciadv.ads5340">DOI</a></div>
+        </div>
+        <span class="badge">Sci. Adv. 2025</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Continuous-time digital twin with analog memristive neural ordinary differential equation solver</h3>
+          <div class="authors">H. Chen†, J. Yang†, J. Chen*†, <b>S. Wang</b>, S. Wang, D. Wang, X. Tian, Y. Yu, X. Chen, Y. Lin, Q. Zhu, Y. He, X. Wu, Y. Li, X. Zhang, N. Lin, M. Xu, Y. Li, X. Zhang, X. Qi, Z. Wang*, H. Wang*, D. Shang*, Q. Liu, K.-T. Cheng, M. Liu</div>
+          <div class="venue"><i>Science Advances</i>, vol. 11, no. 22, p. eadr7571</div>
+          <div class="plinks"><a href="https://doi.org/10.1126/sciadv.adr7571">DOI</a></div>
+        </div>
+        <span class="badge">Sci. Adv. 2025</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>A Reliable, Reconfigurable 3T2R ReRAM-based Chip</h3>
+          <div class="authors">N. Lin†, Y. Li†, Y. He†, <b>S. Wang</b>, H. Chen, K. Wong, C. Li, J. Yang, Y. Yu, M. Xu, Y. Han, R. Chen, X. Chen, X. Xu, J. Yang, D. Shang*, Z. Wang*</div>
+          <div class="venue"><i>ACM/IEEE Design Automation Conference (DAC)</i>, pp. 1–7</div>
+          <div class="plinks"><a href="https://doi.org/10.1109/dac63849.2025.11133290">DOI</a></div>
+        </div>
+        <span class="badge">DAC 2025</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>Efficient Edge Vision Transformer Accelerator with Decoupled Chunk Attention and Hybrid Computing-In-Memory</h3>
+          <div class="authors">Y. Li†, Z. Ye†, X. Fu†, <b>S. Wang</b>, S. Du, N. Lin, D. Shang, J. Yue*, Z. Wang*, X. Qi*, F. Zhang*, H. Wang</div>
+          <div class="venue"><i>ACM/IEEE Design Automation Conference (DAC)</i>, pp. 1–7</div>
+          <div class="plinks"><a href="https://doi.org/10.1109/dac63849.2025.11132426">DOI</a></div>
+        </div>
+        <span class="badge">DAC 2025</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Tunable Neuromorphic Computing for Dynamic Multi-Timescale Sensing in Motion Recognition</h3>
+          <div class="authors">R. Bie, X. Chen, Z. Yang, D. An, Y. Yu, Q. Zhang, C. Li, Z. Zhang, D. Wang, J. Yang, <b>S. Wang</b>, B. Cui, D. Yang, L. Hu, Z. Wang, L. Sun</div>
+          <div class="venue"><i>Cyborg and Bionic Systems</i>, vol. 6, 0412</div>
+          <div class="plinks"><a href="https://doi.org/10.34133/cbsystems.0412">DOI</a></div>
+        </div>
+        <span class="badge">Cyborg Bionic Syst. 2025</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="1">
+        <div>
+          <h3>LSMR: Synergy Randomness in Liquid State Machine and RRAM-based Analog-digital Accelerator</h3>
+          <div class="authors">N. Lin†, <b>S. Wang†</b>, X. Zhang†, S. Wang, Y. He, W. Zhang, B. Wang, J. Li, M. Li, B. Cui, Y. Li, J. Chen, C. Xia, W. Xuan, X. Chen, D. Shang*, Z. Wang*</div>
+          <div class="venue"><i>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</i>, pp. 1–9</div>
+          <div class="plinks"><a href="https://doi.org/10.1145/3676536.3676691">DOI</a></div>
+        </div>
+        <span class="badge">ICCAD 2024</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="1">
+        <div>
+          <h3>SNNGX: Spiking Neural Networks on RRAM-based Neuromorphic Accelerator</h3>
+          <div class="authors">K. Wong†, <b>S. Wang†</b>, W. Huang, X. Zhang, Y. He, K. M. H. Lai, Y. Jiao, N. Lin*, X. Qi, X. Chen*, Z. Wang*</div>
+          <div class="venue"><i>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</i>, pp. 1–9</div>
+          <div class="plinks"><a href="https://doi.org/10.1145/3676536.3676727">DOI</a></div>
+        </div>
+        <span class="badge">ICCAD 2024</span>
+      </article>
+      <article class="card" data-kind="conference" data-first="0">
+        <div>
+          <h3>Conditional Diffusion Model Acceleration with First-Demonstrated RRAM-Based In-Memory Neural Differential Equation Solver</h3>
+          <div class="authors">J. Yang†, H. Chen†, J. Chen, <b>S. Wang</b>, S. Wang, Y. Yu, B. Wang, N. Lin, X. Zhang, R. Chen, Z. Wang*, D. Shang*, H. Wang*, Q. Liu, M. Liu</div>
+          <div class="venue"><i>IEEE International Electron Devices Meeting (IEDM)</i>, pp. 1–4</div>
+          <div class="plinks"><a href="https://doi.org/10.1109/iedm50854.2024.10873487">DOI</a></div>
+        </div>
+        <span class="badge">IEDM 2024</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Random memristor-based dynamic graph CNN for efficient point cloud learning at the edge</h3>
+          <div class="authors">Y. Yu, S. Wang, M. Xu, W. Zhang, B. Wang, J. Yang, <b>S. Wang</b>, Y. Zhang, X. Wu, H. Chen, D. Wang, X. Chen, N. Lin, X. Qi, D. Shang*, Z. Wang*</div>
+          <div class="venue"><i>npj Unconventional Computing</i>, vol. 1, no. 1, p. 6</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s44335-024-00006-0">DOI</a></div>
+        </div>
+        <span class="badge">npj Unconv. Comput. 2024</span>
+      </article>
+      <article class="card" data-kind="journal" data-first="0">
+        <div>
+          <h3>Echo State Graph Neural Networks with Analogue Random Resistive Memory Arrays</h3>
+          <div class="authors">S. Wang, Y. Li, D. Wang, W. Zhang, X. Chen, D. Dong, <b>S. Wang</b>, X. Zhang, P. Lin, C. Gallicchio, X. Xu, Q. Liu, K.-T. Cheng, Z. Wang*, D. Shang*, M. Liu</div>
+          <div class="venue"><i>Nature Machine Intelligence</i>, vol. 5, no. 2, pp. 104–113</div>
+          <div class="plinks"><a href="https://doi.org/10.1038/s42256-023-00609-5">DOI</a></div>
+        </div>
+        <span class="badge">Nat. Mach. Intell. 2023</span>
+      </article>
+      </div>
+      <p class="note">† equal contribution · * corresponding author</p>
+      </details>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <section id="talks">
+      <details class="fold">
+      <summary><h2>Talks</h2></summary>
+      <div class="row"><span class="d">Jul 2026</span><span>A Fully Analog Continuous-Time CIM Neural ODE Solver for Flow-Matching-Based Fluid Dynamics Generation<br><i class="muted">63rd Design Automation Conference (DAC), Long Beach, CA, USA</i></span></div><div class="row"><span class="d">Dec 2025</span><span>A Monolithic Reconfigurable RRAM CIM Chip for Edge AI<br><i class="muted">IEEE International Electron Devices Meeting (IEDM), San Francisco, CA, USA</i></span></div><div class="row"><span class="d">Nov 2025</span><span>Brain-Inspired Structural Optimization: Edge Pruning and Kernel Pruning Across Analog and Digital RRAM-Based Compute-in-Memory<br><i class="muted">Seminar, Department of ECE, The University of Hong Kong</i></span></div><div class="row"><span class="d">Jun 2025</span><span>A Reliable, Reconfigurable 3T2R ReRAM-based Chip<br><i class="muted">62nd Design Automation Conference (DAC), San Francisco, CA, USA</i></span></div>
+      </details>
+    </section>
+
+    <section id="education">
+      <details class="fold">
+      <summary><h2>Education</h2></summary>
+      <div class="row"><span class="d">2022 – 2026</span><span><b>The University of Hong Kong</b><br>Ph.D., Electrical and Computer Engineering<br>Advisors: Prof. Han Wang and Prof. Zhongrui Wang</span></div><div class="row"><span class="d">2021 – 2022</span><span><b>University of California, Santa Barbara</b><br>Graduate Academic International Program, Electrical and Computer Engineering</span></div><div class="row"><span class="d">2019</span><span><b>Nanyang Technological University</b><br>Exchange program, Electrical and Electronic Engineering</span></div><div class="row"><span class="d">2018 – 2022</span><span><b>Huazhong University of Science and Technology</b><br>Bachelor's degree, School of Electronic Information and Communications</span></div>
+      </details>
+    </section>
+
+    <section id="teaching">
+      <details class="fold">
+      <summary><h2>Teaching</h2></summary>
+      <div class="row"><span class="d">2023 – 2026</span><span><b>Teaching Assistant, ELEC6049 Digital System Design Techniques</b><br>The University of Hong Kong, Spring 2023, 2025 and 2026</span></div>
+      </details>
+    </section>
+
+    <footer>Last updated September 2026</footer>
+  </main>
+</div>
+<script src="assets/site.js?v=3a3fae49"></script>
 </body>
-
 </html>
